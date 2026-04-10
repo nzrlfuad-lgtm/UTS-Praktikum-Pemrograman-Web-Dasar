@@ -1,0 +1,128 @@
+*
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+}
+header,footer{
+    background: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+nav ul{
+    background: #34495e;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0.5rem;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 15px;
+}
+.card-wrapper{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+.card{
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    width: 250px;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0,.1);
+    text-align: center;
+}
+@media (max-width: 768px){
+    .card-wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+#pinjam{
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.form-group{
+    margin-bottom: 15px;
+}
+input,select{
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+}
+.error{
+    color: red;
+    font-size: 0.8rem;
+}
+.radio-inline{
+    display: inline-flex;
+    align-items: center;
+    margin-right: 150px;
+}
+
+/* Container Buku */
+.book-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Kartu Buku */
+.book-card {
+    width: 220px;
+    padding: 15px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.book-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Warna Masing-masing Buku */
+.html {
+    background: linear-gradient(135deg, #e44d26, #f16529);
+}
+
+.uiux {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.algoritma {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+}
+
+.jaringan {
+    background: linear-gradient(135deg, #f7971e, #ffd200);
+}
+
+/* Tombol Hapus */
+.btn-hapus {
+    margin-top: 10px;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: white;
+    color: #333;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.btn-hapus:hover {
+    background-color: #333;
+    color: white;
+}

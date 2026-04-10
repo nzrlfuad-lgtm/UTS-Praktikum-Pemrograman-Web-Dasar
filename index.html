@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>PERPUSTAKAAN DIGITAL UMSU</title>
+</head>
+<body>
+    <header>
+        <h1>Perpustakaan Digital</h1>
+        <p>Akses Ilmu Pengetahuan Kamu kapan dan di Mana Saja</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Beranda</a></li>
+            <li><a href="#koleksi">Koleksi Buku </a></li>
+            <li><a href="#pinjam">Peminjaman</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <section class="koleksi">
+    <h2>Koleksi Buku Terpopuler</h2>
+    <div class="book-container">
+        
+        <div class="book-card html">
+            <h3>Buku Belajar HTML</h3>
+            <p>Penulis: Arif</p>
+            <p>Stok: 5</p>
+            <button class="btn-hapus">Hapus</button>
+        </div>
+
+        <div class="book-card uiux">
+            <h3>Buku Desain Web UI/UX</h3>
+            <p>Penulis: Nadia</p>
+            <p>Stok: 3</p>
+            <button class="btn-hapus">Hapus</button>
+        </div>
+
+        <div class="book-card algoritma">
+            <h3>Buku Logika Algoritma</h3>
+            <p>Penulis: Nauval</p>
+            <p>Stok: 7</p>
+            <button class="btn-hapus">Hapus</button>
+        </div>
+
+        <div class="book-card jaringan">
+            <h3>Buku Sistem dan Jaringan</h3>
+            <p>Penulis: Firman</p>
+            <p>Stok: 5</p>
+            <button class="btn-hapus">Hapus</button>
+        </div>
+
+    </div>
+</section>
+
+        <hr>
+
+        <section id="pinjam">
+            <h2>Form Peminjaman Buku</h2>
+            <form id="loanForm">
+                <div class="form-grup">
+                    <label>Nama Lengkap:</label>
+                    <input type="text" id="nama" name="nama" required>
+                    <small class="error" id="err-nama"></small>
+                </div>
+                <div class="form-group">
+                    <label>Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <small class="error" id="err-email"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Nomor Telepon:</label>
+                    <input type="tel" id="telepon" name="telepon" min="1" required>
+                    <small class="error" id="err-telepon"></small>
+                </div>
+
+                <div class="form-group">
+                    <label>Kategori Buku:</label>
+                    <select id="kategori" required>
+                        <option value="">-- Pilih Kategori --</option>
+                        <option value="teknologi">Teknologi</option>
+                        <option value="sains">Sains</option>
+                        <option value="fiksi">Fiksi</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Durasi Pinjam (Hari):</label><br>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="durasi" value="3" checked>3 Hari
+                    </label>
+
+                    <label class="radio-inline">
+                    <input type="radio" name="durasi" value="7">7 Hari
+                    </label>
+                </div>
+
+                <button type="submit">Kirim Peminjaman</button>
+            </form>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2026 SISTEM INFORMASI - UMSU</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
